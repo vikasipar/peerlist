@@ -18,7 +18,7 @@ function Navbar() {
                 <a href='https://drive.google.com/file/d/1TOKr8XDR9JiZQ5RmEDe-6GvwCIj7DNtb/view' target='_blank' className='lg:py-[2.5px] flex flex-col lg:flex-row justify-between lg:justify-start gap-x-2 items-center overflow-y-auto'><PiReadCvLogo className='text-2xl'/>Resume</a>
             </div>
         </div>
-        <div className=' text-[#00aa45]/90 text-sm fixed bottom-1'>Developed by Vikas Ipar</div>
+        <div className='hidden lg:block text-[#00aa45]/90 text-sm fixed bottom-1'>Developed by Vikas Ipar</div>
     </div>
   )
 }

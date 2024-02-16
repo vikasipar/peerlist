@@ -18,19 +18,19 @@ function Home() {
                     <img src="/static/vikas.jpg" alt="vikasipar" className='w-full rounded-full border-2 border-gray-200'/>
                 </div>
                 <h2 className='text-2xl font-semibold flex justify-center items-center'>Vikas Ipar <img src="/static/tick.svg" alt="tick" className='ml-1'/></h2>
-                <p className='text-sm text-gray-600 w-[60%] mx-auto'>I'm a <span className='border-b-2 border-[#3ec975]/60'>front-end developer</span> with experience in many different languages, and technologies. I'm always looking for new challenges to tackle.</p>
+                <p className='text-sm text-gray-600 w-[88%] lg:w-[60%] mx-auto'>I'm a <span className='border-b-2 border-[#3ec975]/60'>front-end developer</span> with experience in many different languages, and technologies. I'm always looking for new challenges to tackle.</p>
             </div>
         </div>
 
         <div>
-            <div className='mb-9'>
-                <ul className='flex flex-wrap mt-12 w-fit mx-auto space-x-4 text-base text-[#959da5]'>
+            <div className='mb-16 lg:mb-9'>
+                <ul className='flex flex-wrap mt-10 lg:mt-12 w-fit mx-auto space-x-4 text-base text-[#959da5]'>
                     <li className={option==='skills'? 'text-[#00aa45] font-semibold border-b-2 border-[#00aa45]':'cursor-pointer'} onClick={()=>setOption('skills')}>Skills</li>
                     <li className={option==='edu'? 'text-[#00aa45] font-semibold border-b-2 border-[#00aa45]':'cursor-pointer'} onClick={()=>setOption('edu')}>Education</li>
                     <li className={option==='other'? 'text-[#00aa45] font-semibold border-b-2 border-[#00aa45]':'cursor-pointer'} onClick={()=>setOption('other')}>Other</li>
                 </ul>
                 {option==='skills' && <div className='font-semibold'>
-                    <ul className='flex flex-wrap justify-center w-[90%] mx-auto space-x-9 space-y-3 p-5 my-10'>
+                    <ul className='flex flex-wrap justify-center items-end lg:w-[90%] mx-auto space-x-2 lg:space-x-9 space-y-3 lg:p-5 mt-3 mb-10 lg:my-10'>
                     <li className='flex items-center'><FaHtml5 className='mx-2 text-[#00aa45]'/>HTML</li>
                     <li className='flex items-center'><FaCss3Alt className='mx-2 text-[#00aa45]'/>CSS</li>
                     <li className='flex items-center'><SiTailwindcss className='mx-2 text-[#00aa45]'/>Tailwind CSS</li>
@@ -44,7 +44,7 @@ function Home() {
                     <li className='flex items-center'><SiC className='mx-2 text-[#00aa45]'/>C Language</li>
                     </ul>
 
-                    <div className='w-[80%] mx-auto'>
+                    <div className='w-[92%] lg:w-[80%] mx-auto'>
                     <h2 className='text-lg text-[#000000] mb-3'>Certifications:</h2>
                     <ul className='text-base font-normal'>
                         <li className='flex items-center my-3 lg:my-auto'><SiCoursera className='mx-5 text-base text-[#00aa45]'/>Coursera - Advanced React: Meta Front-End Developer Specialization.</li>
@@ -57,19 +57,19 @@ function Home() {
                 </div>}
                 {option==='edu' && <div className='w-[80%] mx-auto my-12'>
                     <div className='my-5 text-[#0d0d0d]'>
-                        <h2 className='flex justify-between text-lg font-semibold'><span>BE in Information Technology</span><span className='text-base'>2023</span></h2>
-                        <h4 className='text-[#6a737d] text-base'>Sinhgad College of Engineering, Pune</h4>
-                        <h4 className='text-[#6a737d] text-base'>CGPA: 8.3</h4>
+                        <h2 className='flex justify-between text-base md:text-lg font-semibold'><span>BE in Information Technology</span><span className='text-sm md:text-base'>2023</span></h2>
+                        <h4 className='text-[#6a737d] text-sm md:text-base'>Sinhgad College of Engineering, Pune</h4>
+                        <h4 className='text-[#6a737d] text-sm md:text-base'>CGPA: 8.3</h4>
                     </div>
                     <div className='my-5 text-[#0d0d0d]'>
-                        <h2 className='flex justify-between text-lg font-semibold'><span>HSC</span><span className='text-base'>2019</span></h2>
-                        <h4 className='text-[#6a737d] text-base'>Arts, Commerce & Science College, Nandgaon, Nashik</h4>
-                        <h4 className='text-[#6a737d] text-base'>Percentage: 74%</h4>
+                        <h2 className='flex justify-between text-base md:text-lg font-semibold'><span>HSC</span><span className='text-sm md:text-base'>2019</span></h2>
+                        <h4 className='text-[#6a737d] text-sm md:text-base'>Arts, Commerce & Science College, Nandgaon, Nashik</h4>
+                        <h4 className='text-[#6a737d] text-sm md:text-base'>Percentage: 74%</h4>
                     </div>
                     <div className='my-5 text-[#0d0d0d]'>
-                        <h2 className='flex justify-between text-lg font-semibold'><span>SSC</span><span className='text-base'>2017</span></h2>
-                        <h4 className='text-[#6a737d] text-base'>New English School, Nandgaon, Nashik</h4>
-                        <h4 className='text-[#6a737d] text-base'>Percentage: 86%</h4>
+                        <h2 className='flex justify-between text-base lg:text-lg font-semibold'><span>SSC</span><span className='text-sm md:text-base'>2017</span></h2>
+                        <h4 className='text-[#6a737d] text-sm md:text-base'>New English School, Nandgaon, Nashik</h4>
+                        <h4 className='text-[#6a737d] text-sm md:text-base'>Percentage: 86%</h4>
                     </div>
                 </div>}
                 {option==='other'&&
