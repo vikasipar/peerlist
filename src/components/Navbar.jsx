@@ -3,13 +3,13 @@ import { LuHome } from "react-icons/lu";
 import { PiAddressBook, PiReadCvLogo  } from "react-icons/pi";
 import { IoCubeOutline } from "react-icons/io5";
 import { HiOutlinePencil } from "react-icons/hi2";
-import { NavLink, Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 function Navbar() {
   return (
     <div>
         <div className='mt-[12px] lg:w-[212px] border-r flex-col flex-shrink-0 lg:h-[95vh] text-[16px] text-start lg:flex justify-start lg:top-0'>
-            <Link to='/' id='logo' className='w-[145px] gap-x-2 flex items-center justify-between text-[26px] font-bold'><img src='/static/logo.jpg' className='rounded-xl mx-3 lg:mx-auto h-8 w-8 bg-[#218147] text-white'/><span className='hidden lg:block'>VikasIpar</span></Link>
+            <a href='https://vikasipar.vercel.app/' target='_blank' id='logo' className='w-[145px] gap-x-2 flex items-center justify-between text-[26px] font-bold'><img src='/static/logo.jpg' className='rounded-xl mx-3 lg:mx-auto h-8 w-8 bg-[#218147] text-white'/><span className='hidden lg:block'>VikasIpar</span></a>
             <div className='hidden lg:block leading-[24px] mt-8 text-[#1f1f1f] space-y-2'>
                 <NavLink style={({ isActive }) => ({color: isActive && "#00aa45"})} to='/' className='lg:py-[2.5px] flex flex-col lg:flex-row justify-between lg:justify-start gap-x-2 items-center overflow-y-auto'><LuHome className='text-2xl'/>Home</NavLink>
                 <NavLink to='/projects' style={({ isActive }) => ({color: isActive && "#00aa45"})} className='lg:py-[2.5px] flex flex-col lg:flex-row justify-between lg:justify-start gap-x-2 items-center overflow-y-auto'><IoCubeOutline className='text-2xl'/>Projects</NavLink>
