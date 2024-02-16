@@ -5,6 +5,7 @@ import Sidebar from './components/Sidebar';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
 import Blog from './components/Blog';
+import { Analytics } from '@vercel/analytics/react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
           <Route path='/contact' element={<Contact/>}/>
           <Route path='/blog' element={<Blog/>}/>
         </Routes>
+        <Analytics/>
       </BrowserRouter>
       <Sidebar/>
     </div>
