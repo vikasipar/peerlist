@@ -39,12 +39,12 @@ function Blog() {
     },
   ];
   return (
-    <div className='lg:w-[800px] lg:border-r border-b box-border'>
+    <div className='lg:w-[800px] lg:border-r border-b box-border overflow-x-hidden'>
       <h1 className='m-5 text-2xl font-semibold'>Blog</h1>
-      <div className='flex flex-wrap'>
+      <div className='flex flex-wrap mb-9'>
       {
         blogdata.map((blog) => (
-          <div key={blog.id} className='w-[45%] mx-auto border border-gray-300 px-2 py-2 my-3 hover:shadow rounded-lg'>
+          <div key={blog.id} className='w-[80%] md:w-[45%] mx-auto border border-gray-300 px-2 py-2 my-3 hover:shadow rounded-lg'>
           <a href={blog.url} target='_blank' className='flex-col flex-wrap items-center'>
               <div className='w-[90%] mx-auto'>
                 <img src={blog.img} alt={blog.title} className='rounded-lg'/>

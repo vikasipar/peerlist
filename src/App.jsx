@@ -10,7 +10,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 function App() {
 
   return (
-    <div className='lg:mx-[79px] flex'>
+    <div className='lg:mx-[79px] lg:flex'>
       <BrowserRouter>
       <Navbar/>
         <Routes>

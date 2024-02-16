@@ -11,14 +11,14 @@ function Home() {
     const [option, setOption] = useState("skills");
 
   return (
-    <div className='lg:w-[800px] lg:border-r border-b box-border'>
+    <div className='lg:w-[800px] lg:border-r border-b box-border overflow-x-hidden'>
         <div>
-            <div className='pt-20 text-center space-y-1'>
+            <div className='pt-10 lg:pt-20 text-center space-y-1'>
                 <div className='w-20 mx-auto'>
                     <img src="/static/vikas.jpg" alt="vikasipar" className='w-full rounded-full border-2 border-gray-200'/>
                 </div>
                 <h2 className='text-2xl font-semibold flex justify-center items-center'>Vikas Ipar <img src="/static/tick.svg" alt="tick" className='ml-1'/></h2>
-                <p className='text-sm text-gray-600 w-[88%] lg:w-[60%] mx-auto'>I'm a <span className='border-b-2 border-[#3ec975]/60'>front-end developer</span> with experience in many different languages, and technologies. I'm always looking for new challenges to tackle.</p>
+                <p className='text-sm text-gray-600 w-[88%] md:w-[60%] mx-auto'>I'm a <span className='border-b-2 border-[#3ec975]/60'>front-end developer</span> with experience in many different languages, and technologies. I'm always looking for new challenges to tackle.</p>
             </div>
         </div>
 
@@ -30,7 +30,7 @@ function Home() {
                     <li className={option==='other'? 'text-[#00aa45] font-semibold border-b-2 border-[#00aa45]':'cursor-pointer'} onClick={()=>setOption('other')}>Other</li>
                 </ul>
                 {option==='skills' && <div className='font-semibold'>
-                    <ul className='flex flex-wrap justify-center items-end lg:w-[90%] mx-auto space-x-2 lg:space-x-9 space-y-3 lg:p-5 mt-3 mb-10 lg:my-10'>
+                    <ul className='flex flex-wrap justify-center items-end text-sm md:text-base w-[90%] mx-auto space-x-2 lg:space-x-9 space-y-3 lg:p-5 mt-3 mb-10 lg:my-10'>
                     <li className='flex items-center'><FaHtml5 className='mx-2 text-[#00aa45]'/>HTML</li>
                     <li className='flex items-center'><FaCss3Alt className='mx-2 text-[#00aa45]'/>CSS</li>
                     <li className='flex items-center'><SiTailwindcss className='mx-2 text-[#00aa45]'/>Tailwind CSS</li>
@@ -46,7 +46,7 @@ function Home() {
 
                     <div className='w-[92%] lg:w-[80%] mx-auto'>
                     <h2 className='text-lg text-[#000000] mb-3'>Certifications:</h2>
-                    <ul className='text-base font-normal'>
+                    <ul className='text-sm md:text-base font-normal'>
                         <li className='flex items-center my-3 lg:my-auto'><SiCoursera className='mx-5 text-base text-[#00aa45]'/>Coursera - Advanced React: Meta Front-End Developer Specialization.</li>
                         <li className='flex items-center my-3 lg:my-auto'><FaFreeCodeCamp className='mx-5 text-xl text-[#00aa45]'/>freeCodeCamp - Responsive Web Design Course Certificate.</li>
                         <li className='flex items-center my-3 lg:my-auto'><SiUdemy className='mx-5 text-base text-[#00aa45]'/>Udemy - The Complete ReactJs Course.</li>

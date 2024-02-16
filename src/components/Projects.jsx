@@ -53,24 +53,24 @@ function Projects() {
       ];
       
   return (
-    <div className='lg:w-[800px] lg:border-r border-b box-border'>
+    <div className='lg:w-[800px] lg:border-r border-b box-border mb-9 overflow-x-hidden'>
         <h1 className='m-5 text-2xl font-semibold'>Projects</h1>
         {
             projectdata.map((project) => (
-                <div key={project.id} className='flex flex-wrap items-center w-[80%] mx-auto border border-gray-300 px-2 py-4 my-4 hover:shadow rounded-lg'>
-                    <div className='w-[40%] mx-auto'>
+                <div key={project.id} className='flex flex-col lg:flex-row flex-wrap items-center w-[80%] mx-auto border border-gray-300 lg:px-2 py-2 lg:py-4 my-4 hover:shadow rounded-lg'>
+                    <div className='w-[65%] lg:w-[40%] mx-auto'>
                         <img src={project.img} alt={project.title} className='rounded-lg border border-gray-300'/>
                     </div>
-                    <div className='w-[50%] mx-auto'>
-                        <h1 className='font-semibold text-[#333333] text-xl mb-1'>{project.title}</h1>
+                    <div className='w-[85%] lg:w-[50%] mx-auto mt-4 lg:mt-auto'>
+                        <h1 className='font-semibold text-[#333333] text-base lg:text-xl mb-1'>{project.title}</h1>
                         <p className='text-sm text-justify text-[#6a737d]'>{project.desc}</p>
                         <p className='flex justify-center flex-wrap my-2'>{project.stack.map(tech => (
-                            <span key={tech} className='text-sm text-[#10b139] mx-1 w-fit border border-gray-400 rounded-lg px-2 my-[1px]'>{tech}</span>
+                            <span key={tech} className='text-xs lg:text-sm text-[#10b139] mx-1 w-fit border border-gray-400 rounded-lg px-2 my-[1px]'>{tech}</span>
                             ))}
                         </p>
                         <div className='flex flex-wrap items-center justify-around mt-4'>
-                            <a href={project.github} target='_blank'><button className='px-2 py-[1px] border-2 bg-[#333333] hover:bg-[#555555] text-white rounded-2xl flex items-center gap-x-1'><FaGithub/>Code</button></a>
-                            <a href={project.live} target='_blank'><button className='px-2 py-[1px] border-2 border-[#149735] bg-[#10b139] text-white hover:bg-[#0da834] rounded-2xl flex items-center gap-x-1'><TbWorld/>Live</button></a>
+                            <a href={project.github} target='_blank'><button className='px-2 py-[1px] border-2 border-[#222222] bg-[#333333] hover:bg-[#555555] text-white rounded-2xl flex items-center gap-x-1 text-sm lg:text-lg'><FaGithub/>Code</button></a>
+                            <a href={project.live} target='_blank'><button className='px-2 py-[1px] border-2 border-[#149735] bg-[#10b139] text-white hover:bg-[#0da834] rounded-2xl flex items-center gap-x-1 text-sm lg:text-lg'><TbWorld/>Live</button></a>
                         </div>
                     </div>
                 </div>
