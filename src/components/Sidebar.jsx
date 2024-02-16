@@ -6,7 +6,7 @@ import { SiMedium } from "react-icons/si";
 
 function Sidebar() {
   return (
-    <div className='w-[248px] py-5 pl-5 text-justify mt-16 text-[#1f1f1f] space-y-2 hidden lg:block '>
+    <div className='w-[250px] py-5 pl-4 text-justify mt-16 text-[#1f1f1f] space-y-1 hidden lg:block '>
       <a href='https://github.com/vikasipar' target='_blank' className='flex flex-wrap items-center text-base gap-x-2'>
         <FaSquareGithub className='text-2xl'/>
         <span className='text-sm'>github.com/vikasipar</span>
